@@ -1,13 +1,15 @@
 const mongoose = require('../db/connections')
 const Schema = mongoose.Schema
 
-const Styles = new Schema({
-    name: String,
-    origin: String,
-    techniques: String,
-    weapons: [],
-    offense: [],
-    Defense: [], 
+const Students = new Schema({
+    name: [],
+    teachers: [],
+    styles: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Styles'
+        }
+    ]
 })
 
-module.exports = mongoose.model('Styles', Styles)
+module.exports = mongoose.model('Students', Students)

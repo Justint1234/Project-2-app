@@ -3,7 +3,7 @@ const Schema = mongoose.Schema
 
 const Martialarts = new Schema ({
     origin: String, 
-    styles: number,
+    styles: Number,
     location: String,
     styles: [
         {
