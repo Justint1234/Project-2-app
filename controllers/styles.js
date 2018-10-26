@@ -10,10 +10,17 @@ const stylesController = {
     show: (req, res) => {
         const stylesId = req.params.stylesId
         Styles.findById(stylesId)
-        .then(styles => {
-            res.render(styles)
-        })
-    }
+            .then(styles => {
+                res.render(styles)
+            })
+    },
+    new: (req, res) => {
+        const stylesId = req.params.stylesId
+        Styles.findById(stylesId)
+            .then(styles => {
+                res.render(styles)
+            })
+    },
 
 }
 

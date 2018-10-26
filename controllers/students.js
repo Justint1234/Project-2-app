@@ -17,7 +17,7 @@ const studentsController = {
         const studentsId = req.params.studentsId
         Students.findById(studentsId).populate('martialarts')
             .then((students) => {
-                res.render('students/show', {students: students})
+                res.render('students/show', { students: students })
             })
     }
 }

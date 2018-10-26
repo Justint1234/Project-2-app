@@ -1,4 +1,4 @@
-const Martialarts= require('../models/Martialarts')
+const Martialarts = require('../models/Martialarts')
 
 const martialartsController = {
     index: (req, res) => {
@@ -17,7 +17,7 @@ const martialartsController = {
         const martialartsId = req.params.martialartsId
         Martialarts.findById(martialartsId).populate('martialarts')
             .then((martialarts) => {
-                res.render('martialarts/show', {martialarts: martialarts})
+                res.render('martialarts/show', { martialarts: martialarts })
             })
     }
 }
