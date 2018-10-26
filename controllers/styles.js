@@ -1,21 +1,20 @@
-const Style = require('../models/Style')
-const Student = require('../models/Student')
+const Styles = require('../models/Styles')
 
-const styleController = {
+const stylesController = {
     index: (req, res) => {
-        Style.find({})
+        Styles.find({})
             .then(styles => {
                 res.send(styles)
             })
     },
     show: (req, res) => {
-        const styleId = req.params.styleId
-        Style.findById(styleId)
-        .then(style => {
-            res.render(style)
+        const stylesId = req.params.stylesId
+        Styles.findById(stylesId)
+        .then(styles => {
+            res.render(styles)
         })
     }
 
 }
 
-module.exports = styleController
+module.exports = stylesController

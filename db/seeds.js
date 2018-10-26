@@ -3,41 +3,25 @@ const Styles = require('../models/Styles.js')
 const Students = require('../models/Students.js')
 const mongoose = require('./connections')
 
-const laptop = new Product({
-    name: "Macbook Pro",
+const jackieChan = new Students({
+    name: "Jackie Chan",
     price: 2500,
 })
 
-const shampoo = new Product({
-    name: "Shampoo",
+const Bruce Lee = new Students({
+    name: "Bruce Lee",
     price: 5,
 })
 
-const bread = new Product({
+const Donnie Yen = new Students({
     name: "Bread",
     price: 2.50,
 })
 
-const couch = new Product({
+const Jet Li = new Students({
     name: "Leather Couch",
     price: 500,
 })
-
-const television = new Product({
-    name: "BIG TV",
-    price: 800,
-})
-
-const baseballBat = new Product({
-    name: "Baseball Bat",
-    price: 15,
-})
-
-const uno = new Product({
-    name: "Uno Card Game",
-    price: 10,
-})
-
 
 const kroger = new Store({
     name: "Kroger",
@@ -59,8 +43,8 @@ const walmart = new Store({
     products: [couch, baseballBat]
 })
 
-Store.remove({})
-    .then(() => Product.insertMany([laptop, shampoo, bread, couch, television, baseballBat, uno]))
+Martialarts.remove({})
+    .then(() => Students.insertMany([jackieChan, Bruce Lee, Donnie Yen, Jet Li]))
     .then(() => kroger.save())
     .then(() => target.save())
     .then(() => walmart.save())

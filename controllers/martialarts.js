@@ -17,7 +17,7 @@ const martialartsController = {
         const martialartsId = req.params.martialartsId
         Martialarts.findById(martialartsId).populate('martialarts')
             .then((martialarts) => {
-                res.render('martialarts/show', {martialart: martialart})
+                res.render('martialarts/show', {martialarts: martialarts})
             })
     }
 }

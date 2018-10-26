@@ -1,8 +1,8 @@
-const Student = require('../models/Student')
+const Students = require('../models/Students')
 
 const studentsController = {
     index: (req, res) => {
-        Student.find({}).populate('martialarts')
+        Students.find({}).populate('martialarts')
             .then((students) => {
                 console.log(students)
                 res.render('students/index', {
@@ -14,10 +14,10 @@ const studentsController = {
         res.send("Hey this is route on students")
     },
     show: (req, res) => {
-        const studentId = req.params.studentsId
-        Student.findById(studentId).populate('martialarts')
-            .then((student) => {
-                res.render('students/show', {student: student})
+        const studentsId = req.params.studentsId
+        Students.findById(studentsId).populate('martialarts')
+            .then((students) => {
+                res.render('students/show', {students: students})
             })
     }
 }
