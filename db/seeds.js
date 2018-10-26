@@ -6,47 +6,43 @@ const mongoose = require('./connections')
 const jackieChan = new Students({
     name: 'Jackie Chan',
     age: 64,
-    dob: 04/7/1954,
-    styles: 'Chinese Martial arts, Hapkido, Judo, Taekwondo, Wing Chun, Boxing, etc',
+    dob: 04 / 7 / 1954,
+    styles: 'Chinese Martial arts, Hapkido, Judo, Taekwondo, Wing Chun, Boxing, Drunkboxing',
 })
 
 const bruceLee = new Students({
     name: "Bruce Lee",
     age: 'deceased',
-    dob: 07/20/1973,
+    dob: 07 / 20 / 1973,
     styles: 'Jeet Kune Do, Chinese Martial arts, Wing Chun',
 })
 
 const donnieYen = new Students({
     name: "Donnie Yen",
     age: 55,
-    dob: 07/27/1963,
-    styles: ,
+    dob: 07 / 27 / 1963,
+    styles: 'Wing Chun, Boxing, Mixed martial arts, Wushu, Taekwondo, Muay Thai, Tai Chi, Wrestling, Jeet Kune Do, Brazilian jiu-jitsu, Judo, Kickboxing, Hapkido, Hung Ga',
 })
 
 const jetLi = new Students({
     name: "Jet Li",
-    price: 500,
+    age: 55,
+    dob: 04 / 26 / 1963,
+    styles: 'Chinese martial arts, Baguazhang, Wushu',
 })
 
 const wingChun = new Styles({
     name: "Wing Chun",
-    location: "Edgewood Shopping Center",
-    hours: "Open 24hrs",
-    products: [bread, shampoo]
+    
 })
 const jeetKuneDo = new Styles({
     name: "Jeet Kune Do",
-    location: "Edgewood Shopping Center",
-    hours: "10am - 11pm Everyday of the week",
-    products: [television, uno, laptop]
+   
 })
 
 const karate = new Style({
     name: "Karate",
-    location: "East Atlanta",
-    hours: "Open 24 hrs",
-    products: [couch, baseballBat]
+    
 })
 
 Martialarts.remove({})

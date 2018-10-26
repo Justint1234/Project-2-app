@@ -11,7 +11,11 @@ router.get('/martialarts', martialartsController. index)
 router.get('/martialarts/new', martialartsController. new)
 router.get('/martialarts/:martialartsId', martialartsController. show)
 router.get('/students', studentsController.index)
+router,get('/students/new', studentsController. new)
+router.get('/students/:studentsId', studentsController.show )
 router.get('/styles',stylesController.index)
+router.get('/styles/new', stylesController. new)
+router.get('/styles/:stylesId', stylesController. show)
 router.get(`/martialarts/:martialartsId/students/studentsId`, studentsController.show)
 
 
