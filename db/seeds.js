@@ -12,12 +12,16 @@ const jackieChan = new Students({
 
 const bruceLee = new Students({
     name: "Bruce Lee",
-    price: 5,
+    age: 'deceased',
+    dob: 07/20/1973,
+    styles: 'Jeet Kune Do, Chinese Martial arts, Wing Chun',
 })
 
 const donnieYen = new Students({
     name: "Donnie Yen",
-    price: 2.50,
+    age: 55,
+    dob: 07/27/1963,
+    styles: ,
 })
 
 const jetLi = new Students({
@@ -31,15 +35,15 @@ const wingChun = new Styles({
     hours: "Open 24hrs",
     products: [bread, shampoo]
 })
-const jeetKunD = new Store({
-    name: "Target",
+const jeetKuneDo = new Styles({
+    name: "Jeet Kune Do",
     location: "Edgewood Shopping Center",
     hours: "10am - 11pm Everyday of the week",
     products: [television, uno, laptop]
 })
 
-const walmart = new Store({
-    name: "Walmart",
+const karate = new Style({
+    name: "Karate",
     location: "East Atlanta",
     hours: "Open 24 hrs",
     products: [couch, baseballBat]
@@ -47,9 +51,10 @@ const walmart = new Store({
 
 Martialarts.remove({})
     .then(() => Students.insertMany([jackieChan, bruceLee, donnieYen, jetLi]))
-    .then(() => kroger.save())
-    .then(() => target.save())
-    .then(() => walmart.save())
+    .then(() => Styles.insertMany[Wingchun, jeetKuneDo, Karate])
+    .then(() => Wingchun.save())
+    .then(() => jeetKuneDo.save())
+    .then(() => Karate.save())
     .then(() => console.log("Database seeded success"))
     .then(() => mongoose.connection.close())
 
