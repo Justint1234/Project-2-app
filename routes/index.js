@@ -7,8 +7,12 @@ const studentsController = require('../controllers/students')
 
 router.get('/', applicationController.index)
 
-router.get('martialarts', martialartsController.index)
-
+router.get('/stores', martialartsController. index)
+router.get('/martialarts/new', martialartsController. new)
+router.get('/martialarts/:martialartsId', martialartsController. show)
+router.get(`/styles`, stylesController.index)
+router.get(`/martialarts/:martialartsId/styles/stylesId`, stylesController.show)
+router.get()
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
