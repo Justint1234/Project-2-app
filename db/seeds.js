@@ -4,32 +4,34 @@ const Students = require('../models/Students.js')
 const mongoose = require('./connections')
 
 const jackieChan = new Students({
-    name: "Jackie Chan",
-    price: 2500,
+    name: 'Jackie Chan',
+    age: 64,
+    dob: 04/7/1954,
+    styles: 'Chinese Martial arts, Hapkido, Judo, Taekwondo, Wing Chun, Boxing, etc',
 })
 
-const Bruce Lee = new Students({
+const bruceLee = new Students({
     name: "Bruce Lee",
     price: 5,
 })
 
-const Donnie Yen = new Students({
-    name: "Bread",
+const donnieYen = new Students({
+    name: "Donnie Yen",
     price: 2.50,
 })
 
-const Jet Li = new Students({
-    name: "Leather Couch",
+const jetLi = new Students({
+    name: "Jet Li",
     price: 500,
 })
 
-const kroger = new Store({
-    name: "Kroger",
+const wingChun = new Styles({
+    name: "Wing Chun",
     location: "Edgewood Shopping Center",
     hours: "Open 24hrs",
     products: [bread, shampoo]
 })
-const target = new Store({
+const jeetKunD = new Store({
     name: "Target",
     location: "Edgewood Shopping Center",
     hours: "10am - 11pm Everyday of the week",
@@ -44,7 +46,7 @@ const walmart = new Store({
 })
 
 Martialarts.remove({})
-    .then(() => Students.insertMany([jackieChan, Bruce Lee, Donnie Yen, Jet Li]))
+    .then(() => Students.insertMany([jackieChan, bruceLee, donnieYen, jetLi]))
     .then(() => kroger.save())
     .then(() => target.save())
     .then(() => walmart.save())
