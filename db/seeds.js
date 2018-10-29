@@ -13,9 +13,10 @@ const jackieChan = new Students({
 
 const bruceLee = new Students({
     name: "Bruce Lee",
-    age: 'deceased',
+    age: 'Deceased',
     dob: 07 / 20 / 1973,
     styles: 'Jeet Kune Do, Chinese Martial arts, Wing Chun',
+    facts: 'Lee Jun-fan or as most call him Bruce Lee, known all over the world as one of the greatest martial arts fighters ever, he has left a very lasting impact on the movie industry inspiring actors everywhere. Lee began his acting career as young boy thanks to his father, starring in several movies. At the age of 18 he moved back to the US and attended the University of Washington in Seattle. He has starred in classic movies such as The Big Boss, Way of the Dragon, The Game of Death, and his 2 most popular movies Fists of Fury and Enter The Dragon. To this day tv shows, movies, amd video games remember Bruce Lee by having characters look like him, imitate the sounds he used to make when striking a foe, his stance, or even his legendary yellow outfit he wore in The Game of Death. He has touched the hearts of many including one other famous actor, Jackie Chan. Despite dying at such a young age Bruce Lee still inspires upcoming actors to become the best they can, not to mention they still make characters favoring Lee in video games. Lee was an amazing person, not just for his knowledge and wisdom, but for his physical capabilities. Lee is regarded as borderline superhuman for good reasons. Lee once fought Vic Moore, a 10th-degree black belt. It was said that Lee threw 8 punches at Moore who failed to block not a single blow after he knew they were coming. In movies we see that Bruce Lee is pretty fast but little do people know he was fast his fight scenes had to be slowed down because if not it would look like a blur on screen.   ',
 })
 
 const donnieYen = new Students({
