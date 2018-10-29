@@ -5,7 +5,7 @@ const martialartsController = require('../controllers/martialarts')
 const stylesController = require('../controllers/styles')
 const studentsController = require('../controllers/students')
 const weaponsController = require('../controllers/weapons')
-// const historyController = require('../controllers/history')
+const historyController = require('../controllers/history')
 
 router.get('/', applicationController.index)
 
@@ -22,9 +22,9 @@ router.get(`/martialarts/:martialartsId/students/studentsId`, studentsController
 router.get('/weapons', weaponsController.index)
 router.get('/weapons/new', weaponsController.new)
 router.get('/weapons/:weaponsId', weaponsController.show)
-// router.get('/history/', historyController.index)
-// router.get('/history/new' , historyController.new )
-// router.get('history/:historyId', historyController.show)
+router.get('/history/', historyController.index)
+router.get('/history/new' , historyController.new )
+router.get('history/:historyId', historyController.show)
 
 
 /* GET home page. */

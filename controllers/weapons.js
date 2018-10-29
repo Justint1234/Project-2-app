@@ -5,6 +5,7 @@ const weaponsController = {
         Weapons.find({})
             .then(weapons => {
                 res.send(weapons)
+                console.log(weapons)
             })
     },
     show: (req, res) => {
