@@ -24,6 +24,7 @@ const donnieYen = new Students({
     age: 55,
     dob: 07 / 27 / 1963,
     styles: 'Wing Chun, Boxing, Mixed martial arts, Wushu, Taekwondo, Muay Thai, Tai Chi, Wrestling, Jeet Kune Do, Brazilian jiu-jitsu, Judo, Kickboxing, Hapkido, Hung Ga',
+    facts: 'Donnie Yen Ji-dan a successful actor and martial artist in Asia. Born in Guangzhou, China  ' ,
 })
 
 const jetLi = new Students({
