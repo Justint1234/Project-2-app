@@ -1,24 +1,24 @@
 const History = require('../models/History')
 
-const martialartsController = {
+const historyController = {
     index: (req, res) => {
-        Martialarts.find({}).populate('students')
-            .then((martialarts) => {
-                console.log(martialarts)
-                res.render('martialarts/index', {
-                    martialarts: martialarts
+        History.find({}).populate('history')
+            .then((history) => {
+                console.log(history)
+                res.render('history/index', {
+                    history: history
                 })
             })
     },
     new: (req, res) => {
-        res.send("Hey this is route on martialarts")
+        res.send("Hey this is route on history")
     },
     show: (req, res) => {
-        const martialartsId = req.params.martialartsId
-        Martialarts.findById(martialartsId).populate('martialarts')
-            .then((martialarts) => {
-                res.render('martialarts/show', { martialarts: martialarts })
+        const historyId = req.params.historyId
+        History.findById(historyId).populate('history')
+            .then((history) => {
+                res.render('history/show', { history: history })
             })
     }
 }
-module.exports = martialartsController
+module.exports = historyController

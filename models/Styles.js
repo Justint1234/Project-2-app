@@ -5,9 +5,7 @@ const Styles = new Schema({
     name: String,
     origin: String,
     techniques: String,
-    weapons: [],
-    offense: [],
-    Defense: [], 
+    weapons: [], 
 })
 
 module.exports = mongoose.model('Styles', Styles)

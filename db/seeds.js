@@ -2,13 +2,8 @@ const Martialarts = require('../models/Martialarts.js')
 const Styles = require('../models/Styles.js')
 const Students = require('../models/Students.js')
 const Weapons = require('../models/Weapons.js')
+const History = require('../models/History.js')
 const mongoose = require('./connections')
-
-const jetLi = new Students({
-    name: "Jet Li",
-    age: 55,
-    dob: 04 / 26 / 1963,
-})
 
 const wingChun = new Styles({
     name: "Wing Chun",
@@ -24,8 +19,20 @@ const karate = new Styles({
     
 })
 
-const weapon1 = new Weapons({
+const katana = new Weapons({
     name: 'katana',
+})
+
+const tigerClaws = new Weapons({
+    name: 'tiger claws'
+})
+
+const spear = new Weapons({
+    name: 'spear'
+})
+
+const facts = new History({
+    description: 'hi'
 })
 
 const jackieChan = new Students({
@@ -52,12 +59,25 @@ const donnieYen = new Students({
     facts: 'Donnie Yen Ji-dan a successful actor and martial artist in Asia. Born in Guangzhou, China ' ,
 })
 
+const jetLi = new Students({
+    name: "Jet Li",
+    age: 55,
+    dob: 04 / 26 / 1963,
+})
+
+const kungFu = new Martialarts({
+    origin: fighting, 
+    styles: 3, 
+    location: asia,
+})
+
 Martialarts.remove({})
-    .then(() => Students.insertMany([jackieChan, bruceLee, donnieYen, jetLi]))
     .then(() => Styles.insertMany([wingChun, jeetKuneDo, karate])
-    .then(() => Weapons.insertMany([weapon1])
-    .then(() => wingChun.save())
-    .then(() => jeetKuneDo.save())
-    .then(() => karate.save())
+    .then(() => Weapons.insertMany([katana, tigerClaws, spear])
+    .then(() => History.insertMany([hi]))
+    .then(() => jackieChan.save())
+    .then(() => bruceLee.save())
+    .then(() => donnieYen.save())
+    .then(() => jetLi.save())
     .then(() => console.log("Database seeded success"))
     .then(() => mongoose.connection.close())))

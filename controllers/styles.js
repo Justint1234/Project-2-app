@@ -4,7 +4,7 @@ const stylesController = {
     index: (req, res) => {
         Styles.find({})
             .then(styles => {
-                res.send(styles)
+                res.render('styles/index')
             })
     },
     show: (req, res) => {
