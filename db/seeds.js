@@ -66,9 +66,7 @@ const jetLi = new Students({
 })
 
 const kungFu = new Martialarts({
-    origin: fighting, 
-    styles: 3, 
-    location: asia,
+    styles: [wingChun, jeetKuneDo, karate]
 })
 
 Martialarts.remove({})
