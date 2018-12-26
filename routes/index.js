@@ -33,9 +33,9 @@ router.get('/brucelee/:bruceleeId', bruceleeController.show)
 router.get('/jetli', jetliController.index)
 router.get('/jetli/new', jetliController.new)
 router.get('/jetli/:jetliId', jetliController.show)
-router.get('/history/', historyController.index)
-router.get('/history/new' , historyController.new )
-router.get('history/:historyId', historyController.show)
+// router.get('/history/', historyController.index)
+// router.get('/history/new' , historyController.new )
+// router.get('history/:historyId', historyController.show)
 
 
 /* GET home page. */
