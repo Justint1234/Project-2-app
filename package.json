@@ -1,10 +1,13 @@
 {
   "name": "project-2-app",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon ./bin/www"
+  },
+  "engines": {
+    "node": "11.3.0"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
