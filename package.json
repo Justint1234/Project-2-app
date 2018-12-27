@@ -1,17 +1,16 @@
 {
   "name": "project-2-app",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "private": true,
-  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node app.js",
     "dev": "nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "dotenv": "^6.1.0",
-    "event-stream": "^3.3.5",
+    "event-stream": "^3.3.",
     "express": "~4.16.0",
     "hbs": "~4.0.1",
     "http-errors": "~1.6.2",
